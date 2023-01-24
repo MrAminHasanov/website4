@@ -16,7 +16,7 @@
     justify-content: space-between;
     font-size: 19px;
     align-items: center;
-    padding: 15px 0px 15px 100px;
+    padding: 15px 0px 15px 6%;
 
     .burger_bt {
         display: none;
@@ -91,7 +91,8 @@
     &_unbox {
         display: flex;
         flex-direction: column;
-        padding: 70px 24px 0px 90px;
+        justify-content: space-between;
+        padding: 6% 2% 20% 7%;
     }
 
     h1 {
@@ -133,11 +134,24 @@
         opacity: 0.7;
     }
 
+    @media screen and (max-width:1000px) {
+        h1 {
+            color: rgb(58, 58, 58);
+            font-weight: 800;
+            font-size: 25px;
+        }
+    }
+
     @media screen and (max-width:850px) {
         flex-direction: column;
 
+        h1 {
+            font-size: 34px;
+        }
+
         &_unbox {
             text-align: center;
+            padding: 6% 2% 18% 2%;
         }
 
         img {
@@ -145,27 +159,53 @@
             width: 100%;
         }
     }
+
+    @media screen and (max-width:540px) {
+        &_unbox div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            a {
+                margin-top: 3%;
+            }
+        }
+
+    }
 }
 
 /* #endregion */
 /* #endregion */
 /* #region main*/
 main {
-    >div>h2 {
-        font-size: 32px;
-        font-weight: 1000;
-
-        img {
-            margin-left: 3px;
-            width: 29px;
+    >div {
+        >p {
+            text-align: center;
         }
 
-        @media screen and (max-width:720px) {
-            font-size: 24px;
+        >h2 {
+            font-size: 32px;
+            font-weight: 1000;
+
+            img {
+                margin-left: 3px;
+                width: 29px;
+            }
+
+            @media screen and (max-width:720px) {
+                font-size: 24px;
+            }
+
+            @media screen and (max-width:400px) {
+                font-size: 20px;
+            }
         }
 
-        @media screen and (max-width:400px) {
-            font-size: 20px;
+        @media screen and (max-width:510px) {
+            >a {
+                font-size: 13px!important;
+                padding: 12px 23px !important;
+            }
         }
     }
 }
@@ -214,6 +254,22 @@ main {
         width: 90%;
         margin: auto;
     }
+
+    @media screen and (max-width:720px) {
+        p {
+            font-size: 18px;
+        }
+    }
+
+    @media screen and (max-width:450px) {
+        &_car {
+            padding: 23px 0px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+    }
 }
 
 @keyframes rotate {
@@ -231,7 +287,7 @@ main {
 /* #region bar2*/
 .bar2 {
     background-color: #e6f6fc;
-    padding: 80px 20px;
+    padding: 80px 2%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -335,20 +391,19 @@ main {
         }
 
         @media screen and (max-width:720px) {
-            &_un {
-                display: block;
+            display: block;
 
-                &_1 {
-                    width: 100%;
-                }
-
-                &_2 {
-                    padding-top: 4%;
-                    grid-gap: 4%;
-                    padding-left: 0px;
-                    width: 100%;
-                }
+            &_1 {
+                width: 100%;
             }
+
+            &_2 {
+                padding-top: 4%;
+                grid-gap: 4%;
+                padding-left: 0px;
+                width: 100%;
+            }
+
         }
     }
 

@@ -15,7 +15,7 @@
   justify-content: space-between;
   font-size: 19px;
   align-items: center;
-  padding: 15px 0px 15px 100px;
+  padding: 15px 0px 15px 6%;
 }
 .head1 .burger_bt {
   display: none;
@@ -76,7 +76,8 @@
 .head2_unbox {
   display: flex;
   flex-direction: column;
-  padding: 70px 24px 0px 90px;
+  justify-content: space-between;
+  padding: 6% 2% 20% 7%;
 }
 .head2 h1 {
   color: rgb(58, 58, 58);
@@ -110,22 +111,46 @@
 .head2 a:hover {
   opacity: 0.7;
 }
+@media screen and (max-width: 1000px) {
+  .head2 h1 {
+    color: rgb(58, 58, 58);
+    font-weight: 800;
+    font-size: 25px;
+  }
+}
 @media screen and (max-width: 850px) {
   .head2 {
     flex-direction: column;
   }
+  .head2 h1 {
+    font-size: 34px;
+  }
   .head2_unbox {
     text-align: center;
+    padding: 6% 2% 18% 2%;
   }
   .head2 img {
     padding-top: 20px;
     width: 100%;
   }
 }
+@media screen and (max-width: 540px) {
+  .head2_unbox div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .head2_unbox div a {
+    margin-top: 3%;
+  }
+}
 
 /* #endregion */
 /* #endregion */
 /* #region main*/
+main > div > p {
+  text-align: center;
+}
 main > div > h2 {
   font-size: 32px;
   font-weight: 1000;
@@ -142,6 +167,12 @@ main > div > h2 img {
 @media screen and (max-width: 400px) {
   main > div > h2 {
     font-size: 20px;
+  }
+}
+@media screen and (max-width: 510px) {
+  main > div > a {
+    font-size: 13px !important;
+    padding: 12px 23px !important;
   }
 }
 
@@ -185,6 +216,19 @@ main > div > h2 img {
   width: 90%;
   margin: auto;
 }
+@media screen and (max-width: 720px) {
+  .bar1 p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .bar1_car {
+    padding: 23px 0px;
+  }
+  .bar1 p {
+    font-size: 12px;
+  }
+}
 
 @-webkit-keyframes rotate {
   50% {
@@ -209,7 +253,7 @@ main > div > h2 img {
 /* #region bar2*/
 .bar2 {
   background-color: #e6f6fc;
-  padding: 80px 20px;
+  padding: 80px 2%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -295,13 +339,13 @@ main > div > h2 img {
   grid-area: four;
 }
 @media screen and (max-width: 720px) {
-  .bar2_un_un {
+  .bar2_un {
     display: block;
   }
-  .bar2_un_un_1 {
+  .bar2_un_1 {
     width: 100%;
   }
-  .bar2_un_un_2 {
+  .bar2_un_2 {
     padding-top: 4%;
     grid-gap: 4%;
     padding-left: 0px;
