@@ -51,12 +51,31 @@
   list-style-type: none;
 }
 @media screen and (max-width: 950px) {
+  .head1 {
+    align-items: flex-start;
+  }
+  .head1 > a {
+    position: absolute;
+  }
+  .head1 .burger {
+    width: 100%;
+    overflow: hidden;
+  }
   .head1 ul {
-    display: none;
+    display: block;
+    margin-top: 10px;
+    height: 0px;
+    transition: all 0.4s;
+  }
+  .head1 ul li {
+    height: 30px;
+    text-align: center;
   }
   .head1 .burger_bt {
     display: block;
-    margin-right: 30px;
+    position: relative;
+    left: 90%;
+    width: 25px;
   }
   .head1 .burger_bt div {
     width: 25px;
